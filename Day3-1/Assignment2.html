@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Day 1 Assignment 2</h1>
+
+<p>Write the difference between var, let and const with code examples</p>
+<h4>Var:</h4>
+<p> The scope of a variable defined with the keyword “var” is limited to the “function” within which it is defined. If it is defined outside any function, the scope of the variable is global.
+var is “function scoped”.</p>
+
+
+<h4>let:</h4>
+<p> The scope of a variable defined with the keyword “let” or “const” is limited to the “block” defined by curly braces i.e. {} .
+“let” and “const” are“block scoped”.
+</p>
+
+
+<h4> Const</h4>
+<p>  The scope of a variable defined with the keyword “const” is limited to the block defined by curly braces. However if a variable is defined with keyword const, it cannot be reassigned.
+“const” cannot be re-assigned to a new value. However it CAN be mutated.
+</p>
+
+<script>
+
+
+//Var
+
+var a = {name:"Yash", age:"21", city:"Pune"}
+var b = {name:"Himanshu", age:"21", city:"Pune"}
+var c = {name:"Rohit", age:"22", city:"Pune"}
+
+console.table({a ,b ,c})
+
+//Let
+{
+   // let name = "Himanshu"
+    name = "Himanshu"
+    console.log("Using Let :",name)  
+}
+
+console.log(name)
+
+//const
+const country = "India"
+console.log(country)
+
+//country = "US"
+
+
+</script>
+
+</body>
+</html>
