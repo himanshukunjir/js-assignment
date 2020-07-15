@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<head>
+    
+    <title>LetsUpgrade JS Assignment Day 2 15-07-2020 </title>
+    <h4></h4>Question 2 -> </h4>
+
+</head>
+
+<body>
+    <h2> Array Methods</h2>
+    <h4> concat()</h4>
+    <p> Merge two or more arrays, and returns a new array.</p>
+    <h4> push()</h4>  
+    <p>  Adds one or more elements to the end of an array, and returns the array's new length. </p>
+    <h4> slice() </h4>
+    <p> Selects a part of an array, and returns the new array.</p>
+    <h4> splice() </h4>
+    <p> Adds/Removes elements from an array.</p>
+    <h4> join()</h4>
+    <p> Joins all elements of an array into a string.</p>
+    <h4> toString() </h4>
+    <p> Converts an array to a string, and returns the result.</p>
+    <h4> sort() </h4>
+    <p> Sorts the elements of an array. </p>
+    <h4> keys() </h4>
+    <p>Returns a Array Iteration Object, containing the keys of the original array. </p>
+
+
+    <h2> String Methods</h2>
+    <h4> sort() </h4>
+    <p> The search() method searches a string for a specified value and returns the position of the match:</p>
+    <h4> slice() </h4>
+    <p> slice() extracts a part of a string and returns the extracted part in a new string.</p>
+    <h4> substring() </h4>
+    <p> substring() is similar to slice().
+        The difference is that substring() cannot accept negative indexes.
+    </p>
+    <h4> replace() </h4>
+    <p> The replace() method replaces a specified value with another value in a string.</p>
+    <h4> concat() </h4>
+    <p> The concat() method is used to join two or more strings.
+        This method does not change the existing strings, but returns a new string containing the text of the joined strings.
+    </p>
+    <h4> valueof() </h4>
+    <p> The valueOf() method returns the primitive value of a String object. </p>
+    <h4> toString() </h4>
+    <p> The toString() method returns the value of a String object.</p>
+    <h4> includes() </h4>
+    <p> The includes() method determines whether a string contains the characters of a specified string.
+        This method returns true if the string contains the characters, and false if not.
+    </p>
+
+<script> 
+     console.log("Array Methods :")
+     let arr1 = ["India","Australia","Singapore"]
+     let arr2 = ["Pune","Mumbai","Nagpur"]
+     let arr3 = [1,2,3,4]
+
+     console.log(arr1,arr2,arr3)
+     console.log(arr1.length)
+     console.log(arr1.concat("England"))
+     console.log(arr2.push("Gujarat"))
+     console.log(arr2)
+     console.log(arr1.slice(1))
+     console.log(arr2.slice(1,3))
+     console.log(arr3.splice(1,3))
+     console.log(arr1.join("*"))
+     console.log(arr2.toString())
+     console.log(arr2.sort())
+
+     
+     let fruits = ["Banana", "Orange","Mango"]
+     let count = fruits.keys();
+
+     for(x of count){
+         console.log(x)
+     }
+    
+     console.log("String methods :")
+
+     let name = "Himanshu";
+     let skill = "Coding";
+     console.log("The name is " + name + " .His skill is " + skill)
+
+     let str = "Hey Welcome to Java Script "
+     console.log(str)
+
+     console.log(str.search("Hey"))
+     
+     console.log(str.slice(3,11))
+     
+     console.log(str.substring(14,20))
+
+     console.log(str.replace("Hey","Hello"))
+
+     console.log(name.concat( " ",skill))
+
+     console.log(str.valueOf())
+     
+     console.log(name.toString())
+     console.log(skill.toString())
+     console.log(str.toString())
+
+     console.log(str.includes("Hey"))
+     console.log(str.includes("Hello"))
+ </script>
+    
+    
+</body>
+</html> 
